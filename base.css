@@ -1,0 +1,72 @@
+html{
+    background-color: white;
+    color:black;
+}
+
+#stage{
+    width:800px;
+    height:450px;
+    background:url(img/background.jpg) no-repeat;
+    margin:100px auto 0px;
+    overflow: hidden;
+    position:relative;
+}
+
+#text{
+    width:800px;
+    margin:10px auto;
+}
+
+.count,.score{
+    font-size:18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    float:right;
+    margin-left:15px;
+}
+
+.count span,.score span{
+    font-size:28px;
+}
+
+#start{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin: -40px 0 0 -150px;
+    cursor:pointer;
+}
+
+#start:hover{
+    opacity:0.8;
+}
+
+.chara{
+    width:30px;
+    height:30px;
+    background: url(img/bounin.png) no-repeat top;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    position:absolute;
+    top:450px;
+    left:800px;
+    opacity:0;
+}
+
+.bgm_btn{
+    text-decoration: none;
+    font-size:20px;
+    padding:15px;
+    color:white;
+    background-color:rgb(77, 77, 255);
+    transition-property:all;
+    transition-duration: 0.8s;
+    transition-delay:0s;
+    transition-timing-function: ease-in;
+}
+
+.bgm_btn:hover{
+    color:rgb(98, 98, 242);
+    background-color:rgba(255, 255, 255, 0.935);
+}
