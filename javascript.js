@@ -39,6 +39,7 @@ $('#stage').on('click','.chara',function(){
     .stop(true, false).animate({opacity:0}, 500, function(){
         $(this).remove();
     })
+    //スコアを時間に応じて増やしていきたい
     score+=100;
     $('.score span').text(score);
 })
