@@ -26,7 +26,7 @@ $(function(){
             .css(getPosition())
             .animate({opacity: 1}, 2000)
             .animate(getPosition(), 7000);
-        },500);
+        }, 500);
     }
 
     //キャラを叩いたときの命令
@@ -36,7 +36,7 @@ $('#stage').on('click','.chara',function(){
     $(this)
     .css('background-position','bottom')
     .prop('disabled',true)
-    .stop(true,false).animate({opacity:0},500,function(){
+    .stop(true, false).animate({opacity:0}, 500, function(){
         $(this).remove();
     })
     score+=100;
@@ -47,7 +47,7 @@ $('#stage').on('click','.chara',function(){
     $('#start').click(function(){
         appear();
         gamebgm()
-        $(this).animate({opacity:0},300,function(){
+        $(this).animate({opacity:0}, 300, function(){
             $(this).remove();
         });
         //タイムカウントスタート
